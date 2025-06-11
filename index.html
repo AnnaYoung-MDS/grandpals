@@ -49,5 +49,40 @@
 
     <hr class="line">
 
+    <section class="success-slider">
+        <h1>Success Stories</h1>
+        <p class="subtext">*Click the image to read</p>
+
+        <div class="slider-wrapper">
+            <button class="slider-btn prev">&#8592;</button>
+
+            <div class="slider-track">
+                <div class="slide" onclick="openStory('John & Leo')">
+                    <img src="assets/success-story-01.jpeg" alt="kid dressed as superhero on seniors shoulders">
+                    <span class="caption">John & Leo</span>
+                </div>
+            
+                <div class="slide" onclick="openStory('Sam & Kaiden')">
+                    <img src="assets/success-story-02.jpeg" alt="senior playing with plans with a kid">
+                    <span class="caption">Sam & Kaiden</span>
+                </div>
+       
+                <div class="slide" onclick="openStory('Anne-Marie & Toby')">
+                    <img src="assets/success-story-03.jpg" alt="senrior holding kids hand at the beach holding a rubbish bag">
+                    <span class="caption">Anne-Marie & Toby</span>
+                </div>
+            </div>
+
+            <button class="slider-btn next">&#8594;</button>
+        </div>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

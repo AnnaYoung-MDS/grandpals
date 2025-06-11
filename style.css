@@ -1,6 +1,6 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 /* colours */
@@ -10,67 +10,67 @@ body {
 
 /* log in */
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
 }
 
 header button {
-    background-color: var(--readable-grandpas-blue);
-    color: #fff; 
-    border: none;
-    border-radius: 30px;
-    padding: 1rem 2rem;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+  background-color: var(--readable-grandpas-blue);
+  color: #fff; 
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out;
 }
 
 header button:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* hero section */
 .hero-section {
-    background-color: var(--readable-grandpas-blue);
-    color: white;
-    text-align: center;
-    padding: 4rem 1rem;
+  background-color: var(--readable-grandpas-blue);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
 .hero-inner {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .hero-inner h1 {
-    font-family: "ohno-softie-variable", sans-serif;
-    font-variation-settings: "wght" 500;
-    font-size: 25px;
-    color: white;
-    margin-bottom: 1rem;
+  font-family: "ohno-softie-variable", sans-serif;
+  font-variation-settings: "wght" 500;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .hero-inner p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* landing page grid */
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 4rem 1rem;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
 }
 
 .feature-item {
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .feature-item img {
@@ -81,16 +81,16 @@ header button:hover {
 }
 
 .feature-item h1 {
-    font-family: "ohno-softie-variable", sans-serif;
-    font-variation-settings: "wght" 500;
-    font-size: 30px;
-    color: black;
-    margin: 1rem;
+  font-family: "ohno-softie-variable", sans-serif;
+  font-variation-settings: "wght" 500;
+  font-size: 30px;
+  color: black;
+  margin: 1rem;
 }
 
 .feature-item p {
-    font-size: 20px;
-    margin: 1rem;
+  font-size: 20px;
+  margin: 1rem;
 }
 
 /* landing page line */
@@ -101,4 +101,94 @@ header button:hover {
   background-color: var(--readable-grandpas-blue);
   border: none;
   margin: 2rem auto;
+}
+
+/* landing page slider */
+.success-slider {
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+}
+
+.success-slider h1 {
+  font-family: "ohno-softie-variable", sans-serif;
+  font-variation-settings: "wght" 500;
+  font-size: 25px;
+  margin: 0;
+}
+
+.success-slider .subtext {
+  font-size: 16px;
+  color: grey;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  margin-top: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: var(--readable-grandpas-blue);
 }
