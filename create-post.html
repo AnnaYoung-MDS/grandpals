@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script src="src/connection.js"></script>
+    <script src="job-post.js"></script>
     <script src="menu.js"></script>
 
     <!-- fonts -->
@@ -30,18 +32,40 @@
     </header>
 
     <main class="page">
-        <h1>Posting Fees</h1>
 
-        <p class="reminder-p">To keep connecting families with our wonderful retirees, we charge a small fee of $1 per day to keep your post live. You choose how many days (we recommend 5 days), and you&rsquo;ll add payment details when posting. You&rsquo;re only charged for the days you select.</p>
+        <h1>Create Post</h1>
 
+        <form id="postForm">
+            <input type="date" placeholder="Date" name="date" required>
 
-        <p class="reminder-p">Have questions about posting or payments? Check out our <a href="#" class="support-link">Support Center</a> for tips and answers!</p>
+            <input type="time" placeholder="Start Time" name="startTime" required>
 
-        <div class="reminder-buttons">
-            <a href="create-post.html"><button class="ok-btn">Ok</button></a>
-            <a href="find-babysitters.html"><button class="back-btn">Go Back</button></a>
-        </div>
+            <input type="time" placeholder="End Time" name="endTime" required>
+
+            <input type="text" placeholder="Suburb" name="suburb" required>
+
+            <input type="number" placeholder="Number of Kids" name="kidsNumber" min="1">
+
+            <input type="text" placeholder="Kids Ages" name="kidsAges" required>
+
+            <input type="text" placeholder="Languages" name="languages" required>
+
+            <input type="text" placeholder="Pet Info" name="petInfo">
+
+            <label class="select-wrapper">
+                <select id="kidsPersonality" name="kidsPersonality">
+                <option value="">Kids Personality</option>
+                </select>
+            </label>
+
+            <input type="text" placeholder="Duties" name="duties"/>
+
+        </form>
+
     </main>
-    
+
+    <footer class="bottom-bar">
+        <a href="payment.html"><button class="post-btn" type="submit" form="postForm">Post</button></a>
+    </footer>
 </body>
 </html>

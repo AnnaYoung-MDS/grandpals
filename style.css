@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after { 
+  box-sizing: border-box; 
+}
+
+html, body { 
+  overflow-x: hidden; 
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -6,9 +16,9 @@ body {
 /* colours */
 :root {
   --readable-grandpas-blue: #0098D4;
-  --soft-green:    #ACF88B;
-  --aqua-accent:   #1ABEFF;
-  --dark-teal:     #004850;
+  --soft-green:#ACF88B;
+  --aqua-accent:#1ABEFF;
+  --dark-teal:#004850;
 }
 
 /* logo */
@@ -310,7 +320,6 @@ header button:hover {
   border-radius: 30px;
   cursor: pointer;
   font-size: 20px;
-  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
@@ -323,7 +332,7 @@ header button:hover {
   border: 2px solid var(--dark-teal);
 }
 
-.post-btn {
+.make-post-btn {
   background-color: var(--readable-grandpas-blue);
   color: white;
 }
@@ -449,6 +458,128 @@ button {
   color: var(--readable-grandpas-blue);
 }
 
+/* fee reminder */
+.page {
+  max-width: 420px;
+  padding: 2rem 1.5rem 4rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "ohno-softie-variable", sans-serif;
+  font-size: 30px;
+  margin: 0 0 1.25rem;
+}
+
+.reminder-p {
+  font-size: 18px;
+}
+
+a.support-link {
+  color: var(--readable-grandpas-blue);
+  text-decoration: none;
+}
+
+a.support-link:hover { text-decoration: underline; }
+
+.buttons {
+  position: sticky;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.reminder-buttons {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  width: 100%;
+  transition: transform .2s ease;
+}
+
+.ok-btn {
+  background: var(--readable-grandpas-blue);
+  color: white;
+}
+
+.ok-btn:hover { transform: scale(1.03); }
+
+.back-btn {
+  background: transparent;
+  color: var(--dark-teal);
+}
+
+.back-btn:hover { transform: scale(1.03); }
+
+/* post job */
+form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.25rem; 
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+  border: 2px solid lightgray;
+  border-radius: 30px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus { border-color: var(--aqua-accent); }
+
+.select-wrapper {
+  position: relative;
+  display: block;
+}
+
+select {
+  appearance: none;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 2px solid lightgray;
+  border-radius: 30px;
+  outline: none;
+  color: gray;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+select:focus { border-color: var(--aqua-accent); }
+
+.bottom-bar {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--readable-grandpas-blue);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.post-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  transition: transform 0.2s ease;
+}
+
+.post-btn:hover { transform: scale(1.05); }
+
 @media (min-width: 600px) {
   header img {
     display: block;
@@ -525,5 +656,15 @@ button {
 
   .nav-menu a:hover {
     transform: scale(1.15);
+  }
+
+  h1 {
+  font-family: "ohno-softie-variable", sans-serif;
+  font-size: 50px;
+  margin: 0 0 1.25rem;
+  }
+
+  .reminder-p {
+  font-size: 20px;
   }
 }
