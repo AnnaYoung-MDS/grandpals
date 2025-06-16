@@ -537,24 +537,6 @@ input[type="number"] {
 
 input:focus { border-color: var(--aqua-accent); }
 
-.select-wrapper {
-  position: relative;
-  display: block;
-}
-
-select {
-  appearance: none;
-  width: 100%;
-  padding: 0.9rem 1rem;
-  font-size: 1rem;
-  border: 2px solid lightgray;
-  border-radius: 30px;
-  outline: none;
-  color: gray;
-  cursor: pointer;
-  transition: border 0.2s ease;
-}
-
 select:focus { border-color: var(--aqua-accent); }
 
 .bottom-bar {

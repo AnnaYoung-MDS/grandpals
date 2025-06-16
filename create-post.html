@@ -7,8 +7,10 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="src/connection.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm" type="module"></script>
     <script src="job-post.js"></script>
+
+    <script src="drop-down.js"></script>
     <script src="menu.js"></script>
 
     <!-- fonts -->
@@ -52,11 +54,7 @@
 
             <input type="text" placeholder="Pet Info" name="petInfo">
 
-            <label class="select-wrapper">
-                <select id="kidsPersonality" name="kidsPersonality">
-                <option value="">Kids Personality</option>
-                </select>
-            </label>
+            <input type="text" placeholder="Kids Personality" name="kidsPersonality">
 
             <input type="text" placeholder="Duties" name="duties"/>
 
@@ -65,7 +63,7 @@
     </main>
 
     <footer class="bottom-bar">
-        <a href="payment.html"><button class="post-btn" type="submit" form="postForm">Post</button></a>
+        <button class="post-btn" type="submit" form="postForm">Post</button>
     </footer>
 </body>
 </html>
