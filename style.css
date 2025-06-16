@@ -291,6 +291,164 @@ header button:hover {
   background-color: white;
 }
 
+/* post button */
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.panel-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+.filter-btn {
+  background-color: transparent;
+  color: var(--dark-teal);
+  border: 2px solid var(--dark-teal);
+}
+
+.post-btn {
+  background-color: var(--readable-grandpas-blue);
+  color: white;
+}
+
+/* sitter profiles */
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-card {
+  max-width: 300px;
+  width: 100%;
+  margin: 1rem;
+  padding: 2rem 1.75rem;
+  background-color: lightgray;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+  color: black;
+}
+
+.profile-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--aqua-accent);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  margin: 0.25rem 0 0;
+  font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ic--baseline-verified {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231ABEFF' d='m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48z'/%3E%3C/svg%3E");
+}
+
+h3 {
+  margin: 1.25rem 0 0.25rem;
+  font-size: 20px;
+  color: black;
+}
+
+.profile-card p {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+}
+
+.reviews p {
+  margin-top: 0.5rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.material-symbols--star-rounded {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231ABEFF' d='m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z'/%3E%3C/svg%3E");
+}
+
+.profile-info {
+  width: 100%;
+  text-align: left;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  transition: transform 0.2s ease;
+}
+
+.view-profile {
+  background: var(--readable-grandpas-blue);
+  color: white;
+}
+
+.quick-book {
+  background: transparent;
+  border: 2px solid var(--readable-grandpas-blue);
+  color: var(--readable-grandpas-blue);
+}
+
 @media (min-width: 600px) {
   header img {
     display: block;
