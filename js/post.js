@@ -21,7 +21,7 @@ form.addEventListener('submit', async (e) => {
     num_kids: payload.kidsNumber,
     languages: payload.languages,
     pet_info: payload.petInfo,
-    child_personality: payload.kidsPersonality,
+    child_personalities: payload.kidsPersonality,
     duties: payload.duties
   };
 
