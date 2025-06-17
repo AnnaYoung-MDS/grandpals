@@ -32,9 +32,9 @@ form.addEventListener('submit', async (e) => {
   console.log({ data, error });
 
   if (error) {
-    alert('Error saving post: ' + error.message);
+    alert('ERROR: Go to Support Center');
   } else {
-    alert('Post saved!');
+    alert('Posted successfully: View, edit, or delete in profile settings.');
     form.reset();
   }
 });
