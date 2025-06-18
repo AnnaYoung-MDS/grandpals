@@ -623,6 +623,8 @@ input:focus { border-color: var(--active-green); }
 
   .hero-logo {
     display: block;
+    width: 800px;
+    height: 500px;
   }
 
   .success-slider {
