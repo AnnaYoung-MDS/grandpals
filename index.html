@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script src="js/menu.js" defer></script>
+
     <!-- fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/mbd8mzz.css">
 
@@ -16,20 +18,29 @@
 </head>
 
 <body>
-<header>
-    <img src="assets/final-logos.svg" alt="logo">
-    
-    <a href="find-babysitters.html">
-        <button type="button">Log In</button>
-    </a>
-</header>
+    <header class="navbar">
 
-    <section class="hero-section">
-        <div class="hero-inner">
+        <span class="jam--menu" id="hamburger" aria-label="Toggle menu" aria-expanded="false"></span>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#">How It Works</a>
+            <a href="#">Trust & Safety</a>
+            <a href="#">Success Stories</a>
+            <a href="#">Get Started</a>
+            <a href="#">Support Center</a>
+        </nav>
+    
+        <a href="find-babysitters.html">
+            <button type="button">Log In</button>
+        </a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
             <h1>Local retirees ready to lend a hand and a smile.</h1>
             <p>Because nothing beats experience (and a few great bedtime stories).</p>
         </div>
-    </section>
+        <img src="assets/final-logo.svg" alt="Grandpals logo" class="hero-logo" />
+  </section>
 
     <section class="features-grid">
         <div class="feature-item">
